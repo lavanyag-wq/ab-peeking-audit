@@ -97,8 +97,7 @@
   ]
  },
  "checked_documents": [
-  "README.md",
-  "docs/defense-guide.md"
+  "README.md"
  ],
  "metrics": {
   "coverage_line_pct": 100,

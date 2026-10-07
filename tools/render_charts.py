@@ -82,6 +82,7 @@ def chart_inflation() -> None:
 
 def chart_power() -> None:
     data = json.loads((EXP / "correction_cost.json").read_text())
+    daily_fpr = json.loads((EXP / "inflation.json").read_text())["rows"][2]["fpr_pct"]
     rows = data["rows"]
     w, h = 820, 330
     left, top, bottom = 80, 56, 76
@@ -114,8 +115,7 @@ def chart_power() -> None:
         for j, part in enumerate(r["procedure"].split(" ")):
             svg.append(text(cx, h - bottom + 16 + 13 * j, part, size=11))
         if not r["valid"]:
-            svg.append(text(cx, y - 24, "invalid: bought with the "
-                            f"{json.loads((EXP / 'inflation.json').read_text())['rows'][2]['fpr_pct']}% FPR",
+            svg.append(text(cx, y - 24, f"invalid: bought with the {daily_fpr}% FPR",
                             size=11, fill=WARM))
     cost = data["power_cost_points"]
     svg.append(text(left + px / 2, h - 8,
