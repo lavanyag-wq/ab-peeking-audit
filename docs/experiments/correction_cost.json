@@ -1,0 +1,44 @@
+{
+ "alpha": 0.05,
+ "effect": {
+  "p_a": 0.05,
+  "p_b": 0.0575
+ },
+ "fixed_horizon_n_80pct": 14178,
+ "holdout_ci": [
+  3.46,
+  4.71
+ ],
+ "holdout_fpr_pct": 4.05,
+ "horizon_n_per_arm": 11200,
+ "per_peek_alpha": 0.00631,
+ "power_cost_points": 17.5,
+ "rows": [
+  {
+   "ci_high_pct": 72.2,
+   "ci_low_pct": 69.4,
+   "power_pct": 70.8,
+   "procedure": "single pre-registered look",
+   "threshold": 1.96,
+   "valid": true
+  },
+  {
+   "ci_high_pct": 84.6,
+   "ci_low_pct": 82.2,
+   "power_pct": 83.4,
+   "procedure": "naive daily peeking",
+   "threshold": 1.96,
+   "valid": false
+  },
+  {
+   "ci_high_pct": 54.9,
+   "ci_low_pct": 51.8,
+   "power_pct": 53.3,
+   "procedure": "corrected daily peeking",
+   "threshold": 2.731,
+   "valid": true
+  }
+ ],
+ "trials": 4000,
+ "z_star": 2.731
+}

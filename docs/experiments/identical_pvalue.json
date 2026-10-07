@@ -1,0 +1,22 @@
+{
+ "alpha": 0.05,
+ "daily_early_wins": 1126,
+ "evaporated": 917,
+ "evaporated_pct": 81.4,
+ "median_single_win_p": 0.0252,
+ "median_stop_day": 5,
+ "median_stop_p": 0.0347,
+ "seed": 7,
+ "single_look_wins": 209,
+ "single_win_p_quartiles": [
+  0.0124,
+  0.0252,
+  0.0373
+ ],
+ "stop_p_quartiles": [
+  0.0235,
+  0.0347,
+  0.0427
+ ],
+ "trials": 4000
+}

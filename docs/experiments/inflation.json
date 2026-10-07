@@ -1,0 +1,39 @@
+{
+ "alpha": 0.05,
+ "design": {
+  "base_rate": 0.05,
+  "days": 28,
+  "per_day": 400
+ },
+ "rows": [
+  {
+   "ci_high_pct": 5.96,
+   "ci_low_pct": 4.56,
+   "false_positives": 209,
+   "fpr_pct": 5.22,
+   "peeks": 1,
+   "policy": "single",
+   "verdict": "CONSISTENT"
+  },
+  {
+   "ci_high_pct": 13.56,
+   "ci_low_pct": 11.49,
+   "false_positives": 500,
+   "fpr_pct": 12.5,
+   "peeks": 4,
+   "policy": "weekly",
+   "verdict": "INFLATED"
+  },
+  {
+   "ci_high_pct": 29.57,
+   "ci_low_pct": 26.76,
+   "false_positives": 1126,
+   "fpr_pct": 28.15,
+   "peeks": 28,
+   "policy": "daily",
+   "verdict": "INFLATED"
+  }
+ ],
+ "seed": 7,
+ "trials": 4000
+}
