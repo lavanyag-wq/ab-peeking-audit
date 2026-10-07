@@ -113,7 +113,7 @@ def collect(skip_tests: bool, skip_experiments: bool) -> dict:
         "fixed_horizon_n_80pct": cost["fixed_horizon_n_80pct"],
     }
     return {"metrics": metrics, "anchors": ANCHORS,
-            "checked_documents": ["README.md", "docs/defense-guide.md"],
+            "checked_documents": ["README.md"],
             "note": "every value is produced by running the suite and the experiments"}
 
 

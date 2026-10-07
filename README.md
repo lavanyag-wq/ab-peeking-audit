@@ -115,6 +115,16 @@ spends alpha late (O'Brien-Fleming) would reclaim part of that cost; the
 measurement to score it is already in place, and ADR-002 states what the
 constant boundary leaves on the table.
 
+## Measured, drawn
+
+Rendered by `tools/render_charts.py` straight from the experiment JSON; CI
+regenerates both charts and fails on any drift, the same contract the prose
+lives under.
+
+<img src="docs/chart-inflation.svg" width="820" alt="measured false positive rate per peeking cadence with exact intervals: single 5.22 percent consistent, weekly 12.5 and daily 28.15 percent inflated, against the dashed nominal 5 percent line">
+
+<img src="docs/chart-power.svg" width="820" alt="power bars at the same horizon: single look 70.8 percent, naive daily 83.4 percent drawn hatched as invalid, corrected daily 53.3 percent">
+
 ## The bugs the build found
 
 The simulator's first counter layout generated a covering uniform range per
