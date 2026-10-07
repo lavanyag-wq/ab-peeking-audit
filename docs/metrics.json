@@ -1,0 +1,130 @@
+{
+ "anchors": {
+  "coverage_line_pct": [
+   "{}% line coverage",
+   "coverage of {}%"
+  ],
+  "daily_ci_high_pct": [
+   "ceiling at {}%"
+  ],
+  "daily_ci_low_pct": [
+   "floor at {}%"
+  ],
+  "early_wins": [
+   "{} early wins",
+   "stopped early in {}",
+   "{} of the daily-peeked"
+  ],
+  "evaporated_pct": [
+   "{}% of them are no longer",
+   "{}% of those wins evaporate",
+   "{}% evaporate"
+  ],
+  "fixed_horizon_n_80pct": [
+   "needs {} per arm",
+   "{} per arm for 80%"
+  ],
+  "fpr_daily_pct": [
+   "daily peeking runs {}%",
+   "runs a {}% false positive"
+  ],
+  "fpr_single_pct": [
+   "look runs {}%",
+   "single look at {}%"
+  ],
+  "fpr_weekly_pct": [
+   "weekly peeking runs {}%",
+   "weekly at {}%"
+  ],
+  "holdout_ci_high_pct": [
+   "holdout ceiling at {}%"
+  ],
+  "holdout_ci_low_pct": [
+   "holdout floor at {}%"
+  ],
+  "holdout_fpr_pct": [
+   "held-out rate of {}%",
+   "{}% on held-out nulls"
+  ],
+  "horizon_n_per_arm": [
+   "{} subjects per arm at the horizon",
+   "n per arm of {}"
+  ],
+  "median_single_p": [
+   "single-look median of {}",
+   "median win p of {}"
+  ],
+  "median_stop_day": [
+   "median stop day of {}",
+   "stops at day {}"
+  ],
+  "median_stop_p": [
+   "median reported p of {}",
+   "peeked median {}"
+  ],
+  "per_peek_alpha": [
+   "per-peek alpha of {}"
+  ],
+  "power_corrected_pct": [
+   "peeking wins {}%",
+   "falls to {}%"
+  ],
+  "power_cost_points": [
+   "costs {} points",
+   "{} points of power"
+  ],
+  "power_naive_pct": [
+   "claims {}%",
+   "advertises {}%"
+  ],
+  "power_single_pct": [
+   "look wins {}%",
+   "single look's {}%"
+  ],
+  "tests_total": [
+   "{} tests",
+   "{} property-named tests"
+  ],
+  "trials": [
+   "{} seeded null experiments",
+   "{} null experiments",
+   "{} experiments per"
+  ],
+  "z_star": [
+   "constant z* of {}",
+   "z* = {}",
+   "boundary of {}"
+  ]
+ },
+ "checked_documents": [
+  "README.md",
+  "docs/defense-guide.md"
+ ],
+ "metrics": {
+  "coverage_line_pct": 100,
+  "daily_ci_high_pct": 29.57,
+  "daily_ci_low_pct": 26.76,
+  "early_wins": 1126,
+  "evaporated_pct": 81.4,
+  "fixed_horizon_n_80pct": 14178,
+  "fpr_daily_pct": 28.15,
+  "fpr_single_pct": 5.22,
+  "fpr_weekly_pct": 12.5,
+  "holdout_ci_high_pct": 4.71,
+  "holdout_ci_low_pct": 3.46,
+  "holdout_fpr_pct": 4.05,
+  "horizon_n_per_arm": 11200,
+  "median_single_p": 0.0252,
+  "median_stop_day": 5,
+  "median_stop_p": 0.0347,
+  "per_peek_alpha": 0.00631,
+  "power_corrected_pct": 53.3,
+  "power_cost_points": 17.5,
+  "power_naive_pct": 83.4,
+  "power_single_pct": 70.8,
+  "tests_total": 74,
+  "trials": 4000,
+  "z_star": 2.731
+ },
+ "note": "every value is produced by running the suite and the experiments"
+}
