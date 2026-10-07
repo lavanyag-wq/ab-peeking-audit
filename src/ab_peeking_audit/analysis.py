@@ -19,7 +19,7 @@ import numpy as np
 from statsmodels.stats.power import NormalIndPower
 from statsmodels.stats.proportion import proportion_effectsize, proportions_ztest
 
-from .audit import critical_value, peek_days
+from .audit import peek_days
 from .errors import UsageError
 from .simulate import Design, cumulative_counts
 
@@ -88,7 +88,6 @@ def replay(design: Design, policy: str, seed: int, trial: int, alpha: float,
     if trial < 0 or trial >= trials:
         raise UsageError(f"trial {trial} out of range for {trials} trials")
     conv_a, conv_b = cumulative_counts(design, trials, seed)
-    crit = critical_value(alpha)
     from scipy.stats import norm
     records = []
     for day in peek_days(policy, design.days):
